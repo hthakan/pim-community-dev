@@ -5,9 +5,7 @@ import {pimTheme} from 'akeneo-design-system';
 import {MicroFrontendDependenciesProvider, Routes, Translations} from '@akeneo-pim-community/shared';
 import {routes} from './routes.json';
 import translations from './translations.json';
-import {UnsavedChangesContext} from './feature/context/unsaved-changes-context';
-import {ConfigContext} from './feature/context/config-context';
-import {MeasurementApp} from './feature';
+import {MeasurementApp, ConfigContext, UnsavedChangesContext} from './feature';
 
 ReactDOM.render(
   <React.StrictMode>

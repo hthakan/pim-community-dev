@@ -1,12 +1,10 @@
 import React from 'react';
-import ReactController from '../react/react-controller';
-import {MeasurementApp} from '@akeneo-pim-community/measurement';
-import {measurementsDependencies} from '../dependencies';
-import {ConfigContext} from '@akeneo-pim-community/measurement/lib/context/config-context';
-import {UnsavedChangesContext} from '@akeneo-pim-community/measurement/lib/context/unsaved-changes-context';
-import {DependenciesProvider} from '@akeneo-pim-community/legacy-bridge';
-import {ThemeProvider} from 'styled-components';
 import {pimTheme} from 'akeneo-design-system';
+import {ReactController} from '@akeneo-pim-community/legacy-bridge/src/bridge/react';
+import {DependenciesProvider} from '@akeneo-pim-community/legacy-bridge';
+import {MeasurementApp, ConfigContext, UnsavedChangesContext} from '@akeneo-pim-community/measurement';
+import {measurementsDependencies} from '../dependencies';
+import {ThemeProvider} from 'styled-components';
 
 const mediator = require('oro/mediator');
 const __ = require('oro/translator');
