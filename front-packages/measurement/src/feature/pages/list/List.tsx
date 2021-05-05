@@ -23,7 +23,7 @@ import {
   useSecurity,
   useRoute,
 } from '@akeneo-pim-community/shared';
-import {PimView} from '@akeneo-pim-community/legacy-bridge';
+//import {PimView} from '@akeneo-pim-community/legacy-bridge';
 
 const useSorting = (
   defaultColumn: string
@@ -79,12 +79,12 @@ const List = () => {
     <>
       <CreateMeasurementFamily isOpen={isCreateModalOpen} onClose={handleModalClose} />
       <PageHeader
-        userButtons={
-          <PimView
-            className="AknTitleContainer-userMenuContainer AknTitleContainer-userMenu"
-            viewName="pim-measurements-user-navigation"
-          />
-        }
+//        userButtons={
+//          <PimView
+//            className="AknTitleContainer-userMenuContainer AknTitleContainer-userMenu"
+//            viewName="pim-measurements-user-navigation"
+//          />
+//>        }
         buttons={
           isGranted('akeneo_measurements_measurement_family_create')
             ? [<Button onClick={openCreateModal}>{__('pim_common.create')}</Button>]

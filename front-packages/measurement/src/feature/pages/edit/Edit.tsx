@@ -37,7 +37,7 @@ import {
   PageContent,
   DeleteModal,
 } from '@akeneo-pim-community/shared';
-import {PimView} from '@akeneo-pim-community/legacy-bridge';
+//import {PimView} from '@akeneo-pim-community/legacy-bridge';
 import {Helper, Button, Breadcrumb, useBooleanState} from 'akeneo-design-system';
 
 enum Tab {
@@ -257,12 +257,12 @@ const Edit = () => {
         </DeleteModal>
       )}
       <PageHeader
-        userButtons={
-          <PimView
-            className="AknTitleContainer-userMenuContainer AknTitleContainer-userMenu"
-            viewName="pim-measurements-user-navigation"
-          />
-        }
+//        userButtons={
+//          <PimView
+//            className="AknTitleContainer-userMenuContainer AknTitleContainer-userMenu"
+//            viewName="pim-measurements-user-navigation"
+//          />
+//        }
         buttons={buttons}
         breadcrumb={
           <Breadcrumb>

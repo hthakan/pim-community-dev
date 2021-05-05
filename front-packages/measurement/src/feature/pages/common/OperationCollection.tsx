@@ -97,12 +97,12 @@ const OperatorSelectorLabel = styled.label`
   font-size: ${getFontSize('small')};
 `;
 
-const OperatorOption = styled.div<{isSelected?: boolean}>`
+const OperatorOption = styled.div<{isSelected?: boolean} & AkeneoThemedProps>`
   margin-top: 18px;
   cursor: pointer;
 
-  ${props =>
-    props.isSelected &&
+  ${({isSelected}) =>
+    isSelected &&
     css`
       color: ${getColor('brand', 100)};
       font-style: italic;

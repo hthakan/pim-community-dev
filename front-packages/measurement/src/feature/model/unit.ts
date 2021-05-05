@@ -1,6 +1,5 @@
-import {getLabel, LocaleCode} from '@akeneo-pim-community/shared';
-import {LabelCollection} from 'akeneomeasure/model/label-collection';
-import {Operation} from 'akeneomeasure/model/operation';
+import {getLabel, LocaleCode, LabelCollection} from '@akeneo-pim-community/shared';
+import {Operation} from './operation';
 
 type UnitCode = string;
 
