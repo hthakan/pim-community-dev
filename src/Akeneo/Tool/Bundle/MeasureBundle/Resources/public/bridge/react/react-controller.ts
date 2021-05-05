@@ -4,6 +4,7 @@ import {mountReactElementRef, unmountReactElementRef} from './react-element-help
 const BaseController = require('pim/controller/base');
 const mediator = require('oro/mediator');
 
+//TO remove
 abstract class ReactController extends BaseController {
   /**
    * Base React element to mount (and keep as ref between route changes).
